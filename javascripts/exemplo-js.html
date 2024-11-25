@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+</head>
+
+<body>
+    <script>
+        let lista = ["João", "Stefane", "Alice", "Lara"];
+        function add() {
+            const ul = document.createElement("ul")
+            for (let nome of lista) {
+                const li = document.createElement("li");
+                li.textContent = nome;
+                ul.appendChild(li);
+            }
+            document.body.appendChild(ul)
+        }
+    </script>
+    <button type="button" onclick="add()">click</button>
+</body>
+
+</html>
